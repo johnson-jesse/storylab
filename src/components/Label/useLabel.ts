@@ -1,20 +1,16 @@
-import { useParameter } from "@storybook/api";
 import React from "react";
-import { PARAM_KEY } from "../../constants";
+import { useAsync } from "../../api";
 import { getLabel } from "./service";
 import { Label } from "./type";
 
-export function useLabel() {
-  const param = useParameter<string>(PARAM_KEY);
-  const [label, setLabel] = React.useState<Label>({} as Label);
+const initial: Label = { name: '', color: '', text_color: '' };
+export function useLabel(param: string) {
+  const { data, run, reset } = useAsync(initial);
 
   React.useEffect(() => {
-    let isSubscribed = true;
-    if (param) getLabel(param).then((l) => isSubscribed && setLabel(l));
-    return () => {
-      isSubscribed = false;
-    };
+    if(param) run(getLabel(param));
+    else reset();
   }, [param]);
 
-  return label;
+  return data;
 }
