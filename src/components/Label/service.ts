@@ -1,9 +1,9 @@
 import { project_path } from "../../api/const";
-import { header } from "../../api/delegate";
+import { encodeLabel, header } from "../../api/service";
 import { Label } from "./type";
 
 function url(name: string) {
-  return `${project_path}/labels?${name}=true`;
+  return `${project_path}/labels/${encodeLabel(name)}`;
 }
 
 export async function getLabel(name: string): Promise<Label> {
@@ -11,6 +11,5 @@ export async function getLabel(name: string): Promise<Label> {
     ...header(),
   });
   const data = await response.json();
-  console.log('getLabel:', data);
-  return data[0];
+  return data;
 }

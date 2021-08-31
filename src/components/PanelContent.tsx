@@ -1,8 +1,8 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { styled, themes, convert } from "@storybook/theming";
-import { TabsState, Placeholder, Button } from "@storybook/components";
-import { List } from "./List";
+import { TabsState, Button, Placeholder } from "@storybook/components";
 import Label, { useLabel } from "./Label";
+import Issue, { useIssue } from "./Issue";
 
 export const RequestDataButton = styled(Button)({
   marginTop: "1rem",
@@ -23,12 +23,9 @@ interface PanelContentProps {
  * Checkout https://github.com/storybookjs/storybook/blob/next/addons/jest/src/components/Panel.tsx
  * for a real world example
  */
-export const PanelContent: React.FC<PanelContentProps> = ({
-  results
-  // fetchData,
-  // clearData,
-}) => {
+export const PanelContent: React.FC<PanelContentProps> = () => {
   const label = useLabel();
+  const issue = useIssue();
 
   return (
     <TabsState
@@ -40,39 +37,30 @@ export const PanelContent: React.FC<PanelContentProps> = ({
         title="Overview"
         color={convert(themes.normal).color.positive}
       >
-        <Placeholder>
-          <Fragment>
-            <Label label={label} />
-          </Fragment>
-          {/* <Fragment>
-            <RequestDataButton
-              secondary
-              small
-              onClick={fetchData}
-              style={{ marginRight: 16 }}
-            >
-              Request data
-            </RequestDataButton>
-
-            <RequestDataButton outline small onClick={clearData}>
-              Clear data
-            </RequestDataButton>
-          </Fragment> */}
-        </Placeholder>
+        <div style={{ padding: '1em' }}>
+          <Label label={label} />
+        </div>
       </div>
       <div
         id="danger"
-        title={`${results.danger.length} Danger`}
+        title={`${issue.danger.length} Idle`}
         color={convert(themes.normal).color.negative}
       >
-        <List items={results.danger} />
+        {issue.danger.length > 0 && <Issue issue={issue.danger} />}
       </div>
       <div
         id="warning"
-        title={`${results.warning.length} Warning`}
+        title={`${issue.warning.length} Active`}
         color={convert(themes.normal).color.warning}
       >
-        <List items={results.warning} />
+        {issue.warning.length > 0 && <Issue issue={issue.warning} />}
+      </div>
+      <div
+        id="closed"
+        title={`${issue.closed.length} Closed`}
+        color={convert(themes.normal).color.primary}
+      >
+        {issue.closed.length > 0 && <Issue issue={issue.closed} />}
       </div>
     </TabsState>
   );

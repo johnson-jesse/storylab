@@ -1,3 +1,7 @@
+export function encodeLabel(name: string) {
+  return name.replace("/", "%2F");
+}
+
 export function header() {
   return {
     headers: {
