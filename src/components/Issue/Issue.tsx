@@ -39,8 +39,6 @@ const Styles = styled.div`
 `;
 
 export default function Issue({ param, issue }: Props) {
-  console.log("Issue(s)", issue);
-
   const columns = React.useMemo(
     () => [
       {
@@ -65,7 +63,6 @@ export default function Issue({ param, issue }: Props) {
         accessor: "labels",
         Cell: ({ cell: { value } }: any) => {
           if (!value) return null;
-          console.log("value", value);
           return value
             .filter((i: string) => i !== param)
             .map((i: string) => (

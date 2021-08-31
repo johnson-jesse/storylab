@@ -1,17 +1,19 @@
 {
-  "name": "storybook-addon-kit",
+  "name": "storylab",
   "version": "0.0.0",
-  "description": "everything you need to build a Storybook addon",
+  "description": "Add basic GitLab functionality",
   "keywords": [
     "storybook-addons",
-    "style",
-    "test"
+    "lifecycle",
+    "repository",
+    "tracking",
+    "issue"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookjs/storybook-addon-kit"
+    "url": "https://github.com/johnson-jesse/storylab"
   },
-  "author": "winkerVSbecks",
+  "author": "Jesse A. Johnson",
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -82,7 +84,7 @@
     "access": "public"
   },
   "storybook": {
-    "displayName": "Addon Kit",
+    "displayName": "StoryLab",
     "supportedFrameworks": [
       "react",
       "vue",
