@@ -6,7 +6,7 @@ export default {
   title: "Widget/Button",
   component: Button,
   parameters: {
-    [PARAM_KEY]: 'Widget/Button',
+    [PARAM_KEY]: 'Widget/Tag',
   },
 };
 
