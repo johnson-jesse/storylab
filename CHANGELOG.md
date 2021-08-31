@@ -1,3 +1,16 @@
+# v0.0.3 (Tue Aug 31 2021)
+
+#### ⚠️ Pushed to `main`
+
+- adding org ([@johnson-jesse](https://github.com/johnson-jesse))
+- Merge branch 'main' of https://github.com/johnson-jesse/storylab into main ([@johnson-jesse](https://github.com/johnson-jesse))
+
+#### Authors: 1
+
+- Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
+
+---
+
 # v0.0.2 (Tue Aug 31 2021)
 
 #### 🐛 Bug Fix
