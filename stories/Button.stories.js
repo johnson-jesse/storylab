@@ -5,7 +5,7 @@ export default {
   title: "Widget/Button",
   component: Button,
   parameters: {
-    "storylab": 'Widget/Tag',
+    "storylab": 'Widget/Button',
   },
 };
 

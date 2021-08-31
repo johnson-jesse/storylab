@@ -1,4 +1,5 @@
-# Very Basic GitLab Integration for Storybook
+# Storylab
+The GitLab + Storybook integration
 
 ## setup
 
@@ -11,9 +12,9 @@ SL_GL_TOKEN=<gitlab_personal_access_token>
 ```
 
 ## develop
-The StoryLab addon works with GitLab by looking for any issues by their matching labels. i.e. [GitLab label](https://docs.gitlab.com/ee/user/project/labels.html).
+The StoryLab addon works with GitLab by looking for any issues with matching labels. i.e. [GitLab label](https://docs.gitlab.com/ee/user/project/labels.html).
 
-Open a story and modify the parameter and pass a smartly mamed string:
+Open a story and modify the parameters. Set `storylab` equal to your button identifying label in GitLab.
 
 ```tsx
 // Button.stories.js
@@ -22,7 +23,7 @@ export default {
   title: "Widget/Button",
   component: Button,
   parameters: {
-    "storylab": 'Widget/Tag',
+    "storylab": 'Widget/Button',
   },
 };
 ```
