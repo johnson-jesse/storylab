@@ -1,6 +1,6 @@
 {
   "name": "storylab",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Add basic GitLab functionality",
   "keywords": [
     "storybook-addons",
@@ -14,8 +14,8 @@
     "url": "https://github.com/johnson-jesse/storylab"
   },
   "author": {
-    "name" : "Jesse A. Johnson",
-    "email" : "jesseajohnson@pm.me"
+    "name": "Jesse A. Johnson",
+    "email": "jesseajohnson@pm.me"
   },
   "license": "MIT",
   "main": "dist/cjs/index.js",
