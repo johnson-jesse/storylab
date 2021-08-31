@@ -1,8 +1,9 @@
-export const ADDON_ID = "storybook/my-addon";
+export const ADDON_TITLE = "StoryLab"
+export const ADDON_ID = "storybook/@gbit/storylab";
 export const TOOL_ID = `${ADDON_ID}/tool`;
 export const PANEL_ID = `${ADDON_ID}/panel`;
 export const TAB_ID = `${ADDON_ID}/tab`;
-export const PARAM_KEY = `myAddonParameter`;
+export const PARAM_KEY = `storylab`;
 
 export const EVENTS = {
   RESULT: `${ADDON_ID}/result`,

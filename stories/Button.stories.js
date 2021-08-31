@@ -1,15 +1,12 @@
 import React from "react";
 import { Button } from "./Button";
+import { PARAM_KEY } from '../src/constants';
 
 export default {
-  title: "Example/Button",
+  title: "Widget/Button",
   component: Button,
   parameters: {
-    myAddonParameter: `
-<MyComponent boolProp scalarProp={1} complexProp={{ foo: 1, bar: '2' }}>
-  <SomeOtherComponent funcProp={(a) => a.id} />
-</MyComponent>
-`,
+    [PARAM_KEY]: 'Widget/Button',
   },
 };
 
