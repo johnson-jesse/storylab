@@ -1,7 +1,7 @@
 # Storylab
 The GitLab + Storybook integration
 
-## setup
+### Setup
 
 add environment variables
 
@@ -11,7 +11,7 @@ SL_GL_USER=<gitlab_user_name>
 SL_GL_TOKEN=<gitlab_personal_access_token>
 ```
 
-## develop
+### Develop
 The StoryLab addon works with GitLab by looking for any issues with matching labels. i.e. [GitLab label](https://docs.gitlab.com/ee/user/project/labels.html).
 
 Open a story and modify the parameters. Set `storylab` equal to your button identifying label in GitLab.
@@ -28,8 +28,8 @@ export default {
 };
 ```
 
-## naming
-Try to establish a project wide convention for labels. Maybe this can get you started:
+### Component Story Param Naming
+Try to establish a project wide convention for GitHub labels. Maybe this can get you started:
 
 * `Widget/<component_name>` - This is your smallest component within your codebase
 * `Feature/<component_name>` - This is some combination of elements that do somehting cool
@@ -37,5 +37,10 @@ Try to establish a project wide convention for labels. Maybe this can get you st
 
 StoryLab will take this parameter and return any issues that have this label attached.
 
-## todo
+### GitHub Issue Label Naming
+Issues are split up between three tabs. Idle, Active, and Closed. If an issue is opened, then it will fall into Idle tab unless one of these labels is present: `Progress`, `Review`, `Acceptance`, `Done`.
+
+### todo
 - [ ] Make this addon more awesome! 🤘
+- [ ] Add open issue feature
+- [ ] Add label status change feature
