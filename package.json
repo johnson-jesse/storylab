@@ -13,7 +13,10 @@
     "type": "git",
     "url": "https://github.com/johnson-jesse/storylab"
   },
-  "author": "Jesse A. Johnson",
+  "author": {
+    "name" : "Jesse A. Johnson",
+    "email" : "jesseajohnson@pm.me"
+  },
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
