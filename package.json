@@ -91,6 +91,8 @@
     "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
   },
   "dependencies": {
-    "react-table": "^7.7.0"
+    "@types/styled-components": "^5.1.13",
+    "react-table": "^7.7.0",
+    "styled-components": "^5.3.1"
   }
 }

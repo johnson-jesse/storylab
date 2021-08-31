@@ -49,5 +49,6 @@ export type Issue = {
 };
 
 export type Props = {
+  param: string;
   issue: Issue[];
 };

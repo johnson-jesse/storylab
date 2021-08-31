@@ -1,8 +1,10 @@
+import { useParameter } from "@storybook/api";
+import { Button, TabsState } from "@storybook/components";
+import { convert, styled, themes } from "@storybook/theming";
 import React from "react";
-import { styled, themes, convert } from "@storybook/theming";
-import { TabsState, Button, Placeholder } from "@storybook/components";
-import Label, { useLabel } from "./Label";
+import { PARAM_KEY } from "../constants";
 import Issue, { useIssue } from "./Issue";
+import Label, { useLabel } from "./Label";
 
 export const RequestDataButton = styled(Button)({
   marginTop: "1rem",
@@ -24,6 +26,7 @@ interface PanelContentProps {
  * for a real world example
  */
 export const PanelContent: React.FC<PanelContentProps> = () => {
+  const param = useParameter<string>(PARAM_KEY);
   const label = useLabel();
   const issue = useIssue();
 
@@ -46,21 +49,21 @@ export const PanelContent: React.FC<PanelContentProps> = () => {
         title={`${issue.danger.length} Idle`}
         color={convert(themes.normal).color.negative}
       >
-        {issue.danger.length > 0 && <Issue issue={issue.danger} />}
+        {issue.danger.length > 0 && <Issue param={param} issue={issue.danger} />}
       </div>
       <div
         id="warning"
         title={`${issue.warning.length} Active`}
         color={convert(themes.normal).color.warning}
       >
-        {issue.warning.length > 0 && <Issue issue={issue.warning} />}
+        {issue.warning.length > 0 && <Issue param={param}  issue={issue.warning} />}
       </div>
       <div
         id="closed"
         title={`${issue.closed.length} Closed`}
         color={convert(themes.normal).color.primary}
       >
-        {issue.closed.length > 0 && <Issue issue={issue.closed} />}
+        {issue.closed.length > 0 && <Issue param={param}  issue={issue.closed} />}
       </div>
     </TabsState>
   );
