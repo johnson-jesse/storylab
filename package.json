@@ -1,7 +1,7 @@
 {
   "name": "storylab",
   "version": "0.0.13",
-  "description": "Add basic GitLab functionality",
+  "description": "Adds basic GitLab functionality to Storybook",
   "keywords": [
     "storybook-addons",
     "lifecycle",
