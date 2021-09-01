@@ -1,7 +1,7 @@
 {
-  "name": "storylab",
-  "version": "0.0.13",
-  "description": "Adds basic GitLab functionality to Storybook",
+  "name": "@2-bit/storylab",
+  "version": "0.0.7",
+  "description": "Add basic GitLab functionality",
   "keywords": [
     "storybook-addons",
     "lifecycle",
@@ -11,12 +11,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/johnson-jesse/storylab"
+    "url": "git+https://github.com/johnson-jesse/storylab.git"
   },
-  "author": {
-    "name": "Jesse A. Johnson",
-    "email": "jesseajohnson@pm.me"
-  },
+  "author": "Jesse A. Johnson <jesseajohnson@pm.me>",
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -53,6 +50,7 @@
     "@storybook/addon-essentials": "^6.3.7",
     "@storybook/react": "^6.3.7",
     "@types/react-table": "^7.7.2",
+    "@types/styled-components": "^5.1.13",
     "auto": "^10.3.0",
     "babel-loader": "^8.1.0",
     "boxen": "^5.0.1",
@@ -96,8 +94,11 @@
     "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
   },
   "dependencies": {
-    "@types/styled-components": "^5.1.13",
     "react-table": "^7.7.0",
     "styled-components": "^5.3.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/johnson-jesse/storylab/issues"
+  },
+  "homepage": "https://github.com/johnson-jesse/storylab#readme"
 }

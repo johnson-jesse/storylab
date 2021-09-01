@@ -1,20 +1,16 @@
-import { useParameter } from "@storybook/api";
 import React from "react";
-import { PARAM_KEY } from "../../constants";
+import { useAsync } from "../..//api";
 import { getIssueByLabelName } from "./service";
-import { Issue, IssueState } from "./type";
+import { IssueState } from "./type";
 
-export function useIssue() {
-  const param = useParameter<string>(PARAM_KEY);
-  const [issue, setIssue] = React.useState<IssueState>({ danger: [], warning: [], closed: [] });
+const initial: IssueState = { danger: [], warning: [], closed: [] };
+export function useIssue(param: string) {
+  const { data, run, reset } = useAsync<IssueState>(initial);
 
   React.useEffect(() => {
-    let isSubscribed = true;
-    if (param) getIssueByLabelName(param).then(i => isSubscribed && setIssue(i));
-    return () => {
-      isSubscribed = false;
-    };
+    if (param) run(getIssueByLabelName(param));
+    else reset();
   }, [param]);
 
-  return issue;
+  return data;
 }

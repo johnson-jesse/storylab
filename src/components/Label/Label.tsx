@@ -2,7 +2,10 @@ import React from 'react';
 import { Props } from './type';
 
 export default function Label({ label }: Props) {
-    if (!label) return null;
+    if (!label.name) return (
+        <span>No data for this component</span>
+    );
+
     return (
         <span style={{
             backgroundColor: label.color,

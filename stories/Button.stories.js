@@ -1,12 +1,11 @@
 import React from "react";
 import { Button } from "./Button";
-import { PARAM_KEY } from '../src/constants';
 
 export default {
   title: "Widget/Button",
   component: Button,
   parameters: {
-    [PARAM_KEY]: 'Widget/Tag',
+    "storylab": 'Widget/Button',
   },
 };
 
