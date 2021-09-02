@@ -43,8 +43,7 @@ Storylab will take this parameter and return any issues that have this label att
 ### GitLab Issue Label Naming
 Issues are split up between three tabs. Idle, Active, and Closed. If an issue is opened, then it will fall into Idle tab unless one of these labels is present: `Progress`, `Review`, `Acceptance`, `Done`.
 
-### todo
-- [ ] Make this addon more awesome! 🤘
+### Making this addon more awesome! 🤘
 - [ ] Add open new issue feature
 - [ ] Add label status change feature
-- [ ] Add support for custom labels instead of `Progress`, `Review`, `Acceptance`, `Done`.
+- [x] Add support for custom labels instead of `Progress`, `Review`, `Acceptance`, `Done`.

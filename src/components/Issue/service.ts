@@ -2,6 +2,8 @@ import { storylab_base } from "../../api/const";
 import { encodeLabel, header } from "../../api/service";
 import { Issue, IssueState } from "./type";
 
+const LABEL_STATE = process.env.SL_STATE ? process.env.SL_STATE.split(',') : ['Progress', 'Review', 'Acceptance', 'Done'];
+
 function url(name: string) {
   return `${storylab_base}/issues?labels=${encodeLabel(name)}`;
 }
@@ -21,7 +23,7 @@ export function sortAsType(issue: Issue[]): IssueState {
 
   issue.forEach(i => {
     if (i.state !== 'opened') closed.push(i);
-    if (i.labels.some(s => ['Progress', 'Review', 'Acceptance', 'Done'].includes(s)))
+    if (i.labels.some(s => LABEL_STATE.includes(s)))
       warning.push(i);
     else danger.push(i);
   });
