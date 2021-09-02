@@ -4,6 +4,7 @@
   "description": "Add basic GitLab functionality",
   "keywords": [
     "storybook-addons",
+    "GitLab",
     "lifecycle",
     "repository",
     "tracking",
@@ -89,7 +90,8 @@
     "supportedFrameworks": [
       "react",
       "vue",
-      "angular"
+      "angular",
+      "GitLab"
     ],
     "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
   },
