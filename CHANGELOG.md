@@ -1,3 +1,16 @@
+# v0.0.11 (Thu Sep 02 2021)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/johnson-jesse/storylab into main ([@johnson-jesse](https://github.com/johnson-jesse))
+- adding image as githubusercontent ([@johnson-jesse](https://github.com/johnson-jesse))
+
+#### Authors: 1
+
+- Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
+
+---
+
 # v0.0.10 (Thu Sep 02 2021)
 
 #### ⚠️ Pushed to `main`
