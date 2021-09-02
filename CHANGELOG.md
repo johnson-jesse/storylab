@@ -1,3 +1,15 @@
+# v0.0.13 (Thu Sep 02 2021)
+
+#### ⚠️ Pushed to `main`
+
+- Adding support for custom state labels ([@johnson-jesse](https://github.com/johnson-jesse))
+
+#### Authors: 1
+
+- Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
+
+---
+
 # v0.0.12 (Thu Sep 02 2021)
 
 #### ⚠️ Pushed to `main`
