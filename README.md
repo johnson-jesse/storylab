@@ -1,6 +1,8 @@
 # Storylab
 The GitLab + Storybook integration
 
+![](https://raw.githubusercontent.com/johnson-jesse/storylab/main/.github/images/storylab.png)
+
 ### Setup
 
 add environment variables
