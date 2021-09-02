@@ -2,6 +2,23 @@
 
 #### ⚠️ Pushed to `main`
 
+- Merge branch 'main' of https://github.com/johnson-jesse/storylab into main ([@johnson-jesse](https://github.com/johnson-jesse))
+- Update package.json ([@johnson-jesse](https://github.com/johnson-jesse))
+- updated documentation ([@johnson-jesse](https://github.com/johnson-jesse))
+- Merge branch 'main' of https://github.com/johnson-jesse/storylab into main (johnson_jesse@bah.com)
+- Updated discription (johnson_jesse@bah.com)
+
+#### Authors: 2
+
+- Jesse (johnson_jesse@bah.com)
+- Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
+
+---
+
+# v0.0.8 (Thu Sep 02 2021)
+
+#### ⚠️ Pushed to `main`
+
 - updated documentation ([@johnson-jesse](https://github.com/johnson-jesse))
 - Merge branch 'main' of https://github.com/johnson-jesse/storylab into main ([@johnson-jesse](https://github.com/johnson-jesse))
 - Merge branch 'main' of https://github.com/johnson-jesse/storylab into main (johnson_jesse@bah.com)
