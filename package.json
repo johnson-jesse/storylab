@@ -1,6 +1,6 @@
 {
   "name": "@2-bit/storylab",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Add basic GitLab functionality",
   "keywords": [
     "storybook-addons",
