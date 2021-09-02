@@ -81,12 +81,11 @@
 - Merge branch 'main' of https://github.com/johnson-jesse/storylab into main ([@johnson-jesse](https://github.com/johnson-jesse))
 - Update package.json ([@johnson-jesse](https://github.com/johnson-jesse))
 - updated documentation ([@johnson-jesse](https://github.com/johnson-jesse))
-- Merge branch 'main' of https://github.com/johnson-jesse/storylab into main (johnson_jesse@bah.com)
-- Updated discription (johnson_jesse@bah.com)
+- Merge branch 'main' of https://github.com/johnson-jesse/storylab into main (jesseajohnson@pm.me)
+- Updated discription (jesseajohnson@pm.me)
 
-#### Authors: 2
+#### Authors: 1
 
-- Jesse (johnson_jesse@bah.com)
 - Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
 
 ---
@@ -97,12 +96,11 @@
 
 - updated documentation ([@johnson-jesse](https://github.com/johnson-jesse))
 - Merge branch 'main' of https://github.com/johnson-jesse/storylab into main ([@johnson-jesse](https://github.com/johnson-jesse))
-- Merge branch 'main' of https://github.com/johnson-jesse/storylab into main (johnson_jesse@bah.com)
-- Updated discription (johnson_jesse@bah.com)
+- Merge branch 'main' of https://github.com/johnson-jesse/storylab into main (jesseajohnson@pm.me)
+- Updated discription (jesseajohnson@pm.me)
 
-#### Authors: 2
+#### Authors: 1
 
-- Jesse (johnson_jesse@bah.com)
 - Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
 
 ---
@@ -113,12 +111,12 @@
 
 - updated documentation (jesseajohnson@pm.me)
 - Merge branch 'main' of https://github.com/johnson-jesse/storylab into main (jesseajohnson@pm.me)
-- Merge branch 'main' of https://github.com/johnson-jesse/storylab into main (johnson_jesse@bah.com)
-- Updated discription (johnson_jesse@bah.com)
+- Merge branch 'main' of https://github.com/johnson-jesse/storylab into main (jesseajohnson@pm.me)
+- Updated discription (jesseajohnson@pm.me)
 
-#### Authors: 2
+#### Authors: 1
 
-- Jesse (johnson_jesse@bah.com)
+
 - Jesse A Johnson (jesseajohnson@pm.me)
 
 ---
@@ -209,23 +207,22 @@
 
 #### 🐛 Bug Fix
 
-- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (johnson_jesse@bah.com [@johnson-jesse](https://github.com/johnson-jesse))
+- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (jesseajohnson@pm.me [@johnson-jesse](https://github.com/johnson-jesse))
 
 #### ⚠️ Pushed to `main`
 
 - removing bad import ([@johnson-jesse](https://github.com/johnson-jesse))
 - better loading when switching components ([@johnson-jesse](https://github.com/johnson-jesse))
 - automated org update ([@johnson-jesse](https://github.com/johnson-jesse))
-- update author (johnson_jesse@bah.com)
-- upgrade SB (johnson_jesse@bah.com)
-- Merge branch 'develop' into main (johnson_jesse@bah.com)
-- updating names (johnson_jesse@bah.com)
-- initial commit (johnson_jesse@bah.com)
+- update author (jesseajohnson@pm.me)
+- upgrade SB (jesseajohnson@pm.me)
+- Merge branch 'develop' into main (jesseajohnson@pm.me)
+- updating names (jesseajohnson@pm.me)
+- initial commit (jesseajohnson@pm.me)
 - Initial commit ([@johnson-jesse](https://github.com/johnson-jesse))
 
-#### Authors: 2
+#### Authors: 1
 
-- Jesse (johnson_jesse@bah.com)
 - Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
 
 ---
@@ -234,21 +231,20 @@
 
 #### 🐛 Bug Fix
 
-- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (johnson_jesse@bah.com [@johnson-jesse](https://github.com/johnson-jesse))
+- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (jesseajohnson@pm.me [@johnson-jesse](https://github.com/johnson-jesse))
 
 #### ⚠️ Pushed to `main`
 
 - automated org update ([@johnson-jesse](https://github.com/johnson-jesse))
-- update author (johnson_jesse@bah.com)
-- upgrade SB (johnson_jesse@bah.com)
-- Merge branch 'develop' into main (johnson_jesse@bah.com)
-- updating names (johnson_jesse@bah.com)
-- initial commit (johnson_jesse@bah.com)
+- update author (jesseajohnson@pm.me)
+- upgrade SB (jesseajohnson@pm.me)
+- Merge branch 'develop' into main (jesseajohnson@pm.me)
+- updating names (jesseajohnson@pm.me)
+- initial commit (jesseajohnson@pm.me)
 - Initial commit ([@johnson-jesse](https://github.com/johnson-jesse))
 
-#### Authors: 2
+#### Authors: 1
 
-- Jesse (johnson_jesse@bah.com)
 - Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
 
 ---
@@ -257,20 +253,19 @@
 
 #### 🐛 Bug Fix
 
-- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (johnson_jesse@bah.com [@johnson-jesse](https://github.com/johnson-jesse))
+- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (jesseajohnson@pm.me [@johnson-jesse](https://github.com/johnson-jesse))
 
 #### ⚠️ Pushed to `main`
 
-- update author (johnson_jesse@bah.com)
-- upgrade SB (johnson_jesse@bah.com)
-- Merge branch 'develop' into main (johnson_jesse@bah.com)
-- updating names (johnson_jesse@bah.com)
-- initial commit (johnson_jesse@bah.com)
+- update author (jesseajohnson@pm.me)
+- upgrade SB (jesseajohnson@pm.me)
+- Merge branch 'develop' into main (jesseajohnson@pm.me)
+- updating names (jesseajohnson@pm.me)
+- initial commit (jesseajohnson@pm.me)
 - Initial commit ([@johnson-jesse](https://github.com/johnson-jesse))
 
-#### Authors: 2
+#### Authors: 1
 
-- Jesse (johnson_jesse@bah.com)
 - Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
 
 ---
@@ -279,20 +274,19 @@
 
 #### 🐛 Bug Fix
 
-- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (johnson_jesse@bah.com [@johnson-jesse](https://github.com/johnson-jesse))
+- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (jesseajohnson@pm.me [@johnson-jesse](https://github.com/johnson-jesse))
 
 #### ⚠️ Pushed to `main`
 
-- update author (johnson_jesse@bah.com)
-- upgrade SB (johnson_jesse@bah.com)
-- Merge branch 'develop' into main (johnson_jesse@bah.com)
-- updating names (johnson_jesse@bah.com)
-- initial commit (johnson_jesse@bah.com)
+- update author (jesseajohnson@pm.me)
+- upgrade SB (jesseajohnson@pm.me)
+- Merge branch 'develop' into main (jesseajohnson@pm.me)
+- updating names (jesseajohnson@pm.me)
+- initial commit (jesseajohnson@pm.me)
 - Initial commit ([@johnson-jesse](https://github.com/johnson-jesse))
 
-#### Authors: 2
+#### Authors: 1
 
-- Jesse (johnson_jesse@bah.com)
 - Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
 
 ---
@@ -301,20 +295,19 @@
 
 #### 🐛 Bug Fix
 
-- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (johnson_jesse@bah.com [@johnson-jesse](https://github.com/johnson-jesse))
+- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (jesseajohnson@pm.me [@johnson-jesse](https://github.com/johnson-jesse))
 
 #### ⚠️ Pushed to `main`
 
-- update author (johnson_jesse@bah.com)
-- upgrade SB (johnson_jesse@bah.com)
-- Merge branch 'develop' into main (johnson_jesse@bah.com)
-- updating names (johnson_jesse@bah.com)
-- initial commit (johnson_jesse@bah.com)
+- update author (jesseajohnson@pm.me)
+- upgrade SB (jesseajohnson@pm.me)
+- Merge branch 'develop' into main (jesseajohnson@pm.me)
+- updating names (jesseajohnson@pm.me)
+- initial commit (jesseajohnson@pm.me)
 - Initial commit ([@johnson-jesse](https://github.com/johnson-jesse))
 
-#### Authors: 2
+#### Authors: 1
 
-- Jesse (johnson_jesse@bah.com)
 - Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
 
 ---
@@ -323,20 +316,19 @@
 
 #### 🐛 Bug Fix
 
-- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (johnson_jesse@bah.com [@johnson-jesse](https://github.com/johnson-jesse))
+- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (jesseajohnson@pm.me [@johnson-jesse](https://github.com/johnson-jesse))
 
 #### ⚠️ Pushed to `main`
 
-- update author (johnson_jesse@bah.com)
-- upgrade SB (johnson_jesse@bah.com)
-- Merge branch 'develop' into main (johnson_jesse@bah.com)
-- updating names (johnson_jesse@bah.com)
-- initial commit (johnson_jesse@bah.com)
+- update author (jesseajohnson@pm.me)
+- upgrade SB (jesseajohnson@pm.me)
+- Merge branch 'develop' into main (jesseajohnson@pm.me)
+- updating names (jesseajohnson@pm.me)
+- initial commit (jesseajohnson@pm.me)
 - Initial commit ([@johnson-jesse](https://github.com/johnson-jesse))
 
-#### Authors: 2
+#### Authors: 1
 
-- Jesse (johnson_jesse@bah.com)
 - Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
 
 ---
@@ -345,20 +337,19 @@
 
 #### 🐛 Bug Fix
 
-- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (johnson_jesse@bah.com [@johnson-jesse](https://github.com/johnson-jesse))
+- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (jesseajohnson@pm.me [@johnson-jesse](https://github.com/johnson-jesse))
 
 #### ⚠️ Pushed to `main`
 
-- update author (johnson_jesse@bah.com)
-- upgrade SB (johnson_jesse@bah.com)
-- Merge branch 'develop' into main (johnson_jesse@bah.com)
-- updating names (johnson_jesse@bah.com)
-- initial commit (johnson_jesse@bah.com)
+- update author (jesseajohnson@pm.me)
+- upgrade SB (jesseajohnson@pm.me)
+- Merge branch 'develop' into main (jesseajohnson@pm.me)
+- updating names (jesseajohnson@pm.me)
+- initial commit (jesseajohnson@pm.me)
 - Initial commit ([@johnson-jesse](https://github.com/johnson-jesse))
 
-#### Authors: 2
+#### Authors: 1
 
-- Jesse (johnson_jesse@bah.com)
 - Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
 
 ---
@@ -367,20 +358,19 @@
 
 #### 🐛 Bug Fix
 
-- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (johnson_jesse@bah.com [@johnson-jesse](https://github.com/johnson-jesse))
+- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (jesseajohnson@pm.me [@johnson-jesse](https://github.com/johnson-jesse))
 
 #### ⚠️ Pushed to `main`
 
-- update author (johnson_jesse@bah.com)
-- upgrade SB (johnson_jesse@bah.com)
-- Merge branch 'develop' into main (johnson_jesse@bah.com)
-- updating names (johnson_jesse@bah.com)
-- initial commit (johnson_jesse@bah.com)
+- update author (jesseajohnson@pm.me)
+- upgrade SB (jesseajohnson@pm.me)
+- Merge branch 'develop' into main (jesseajohnson@pm.me)
+- updating names (jesseajohnson@pm.me)
+- initial commit (jesseajohnson@pm.me)
 - Initial commit ([@johnson-jesse](https://github.com/johnson-jesse))
 
-#### Authors: 2
+#### Authors: 1
 
-- Jesse (johnson_jesse@bah.com)
 - Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
 
 ---
@@ -389,20 +379,19 @@
 
 #### 🐛 Bug Fix
 
-- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (johnson_jesse@bah.com [@johnson-jesse](https://github.com/johnson-jesse))
+- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (jesseajohnson@pm.me [@johnson-jesse](https://github.com/johnson-jesse))
 
 #### ⚠️ Pushed to `main`
 
-- update author (johnson_jesse@bah.com)
-- upgrade SB (johnson_jesse@bah.com)
-- Merge branch 'develop' into main (johnson_jesse@bah.com)
-- updating names (johnson_jesse@bah.com)
-- initial commit (johnson_jesse@bah.com)
+- update author (jesseajohnson@pm.me)
+- upgrade SB (jesseajohnson@pm.me)
+- Merge branch 'develop' into main (jesseajohnson@pm.me)
+- updating names (jesseajohnson@pm.me)
+- initial commit (jesseajohnson@pm.me)
 - Initial commit ([@johnson-jesse](https://github.com/johnson-jesse))
 
-#### Authors: 2
+#### Authors: 1
 
-- Jesse (johnson_jesse@bah.com)
 - Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
 
 ---
@@ -411,20 +400,19 @@
 
 #### 🐛 Bug Fix
 
-- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (johnson_jesse@bah.com [@johnson-jesse](https://github.com/johnson-jesse))
+- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (jesseajohnson@pm.me [@johnson-jesse](https://github.com/johnson-jesse))
 
 #### ⚠️ Pushed to `main`
 
-- update author (johnson_jesse@bah.com)
-- upgrade SB (johnson_jesse@bah.com)
-- Merge branch 'develop' into main (johnson_jesse@bah.com)
-- updating names (johnson_jesse@bah.com)
-- initial commit (johnson_jesse@bah.com)
+- update author (jesseajohnson@pm.me)
+- upgrade SB (jesseajohnson@pm.me)
+- Merge branch 'develop' into main (jesseajohnson@pm.me)
+- updating names (jesseajohnson@pm.me)
+- initial commit (jesseajohnson@pm.me)
 - Initial commit ([@johnson-jesse](https://github.com/johnson-jesse))
 
-#### Authors: 2
+#### Authors: 1
 
-- Jesse (johnson_jesse@bah.com)
 - Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
 
 ---
@@ -433,20 +421,19 @@
 
 #### 🐛 Bug Fix
 
-- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (johnson_jesse@bah.com [@johnson-jesse](https://github.com/johnson-jesse))
+- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (jesseajohnson@pm.me [@johnson-jesse](https://github.com/johnson-jesse))
 
 #### ⚠️ Pushed to `main`
 
-- update author (johnson_jesse@bah.com)
-- upgrade SB (johnson_jesse@bah.com)
-- Merge branch 'develop' into main (johnson_jesse@bah.com)
-- updating names (johnson_jesse@bah.com)
-- initial commit (johnson_jesse@bah.com)
+- update author (jesseajohnson@pm.me)
+- upgrade SB (jesseajohnson@pm.me)
+- Merge branch 'develop' into main (jesseajohnson@pm.me)
+- updating names (jesseajohnson@pm.me)
+- initial commit (jesseajohnson@pm.me)
 - Initial commit ([@johnson-jesse](https://github.com/johnson-jesse))
 
-#### Authors: 2
+#### Authors: 1
 
-- Jesse (johnson_jesse@bah.com)
 - Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
 
 ---
@@ -455,20 +442,19 @@
 
 #### 🐛 Bug Fix
 
-- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (johnson_jesse@bah.com [@johnson-jesse](https://github.com/johnson-jesse))
+- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (jesseajohnson@pm.me [@johnson-jesse](https://github.com/johnson-jesse))
 
 #### ⚠️ Pushed to `main`
 
-- update author (johnson_jesse@bah.com)
-- upgrade SB (johnson_jesse@bah.com)
-- Merge branch 'develop' into main (johnson_jesse@bah.com)
-- updating names (johnson_jesse@bah.com)
-- initial commit (johnson_jesse@bah.com)
+- update author (jesseajohnson@pm.me)
+- upgrade SB (jesseajohnson@pm.me)
+- Merge branch 'develop' into main (jesseajohnson@pm.me)
+- updating names (jesseajohnson@pm.me)
+- initial commit (jesseajohnson@pm.me)
 - Initial commit ([@johnson-jesse](https://github.com/johnson-jesse))
 
-#### Authors: 2
+#### Authors: 1
 
-- Jesse (johnson_jesse@bah.com)
 - Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
 
 ---
@@ -477,19 +463,18 @@
 
 #### 🐛 Bug Fix
 
-- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (johnson_jesse@bah.com [@johnson-jesse](https://github.com/johnson-jesse))
+- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (jesseajohnson@pm.me [@johnson-jesse](https://github.com/johnson-jesse))
 
 #### ⚠️ Pushed to `main`
 
-- upgrade SB (johnson_jesse@bah.com)
-- Merge branch 'develop' into main (johnson_jesse@bah.com)
-- updating names (johnson_jesse@bah.com)
-- initial commit (johnson_jesse@bah.com)
+- upgrade SB (jesseajohnson@pm.me)
+- Merge branch 'develop' into main (jesseajohnson@pm.me)
+- updating names (jesseajohnson@pm.me)
+- initial commit (jesseajohnson@pm.me)
 - Initial commit ([@johnson-jesse](https://github.com/johnson-jesse))
 
-#### Authors: 2
+#### Authors: 1
 
-- Jesse (johnson_jesse@bah.com)
 - Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
 
 ---
@@ -498,19 +483,18 @@
 
 #### 🐛 Bug Fix
 
-- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (johnson_jesse@bah.com [@johnson-jesse](https://github.com/johnson-jesse))
+- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (jesseajohnson@pm.me [@johnson-jesse](https://github.com/johnson-jesse))
 
 #### ⚠️ Pushed to `main`
 
-- upgrade SB (johnson_jesse@bah.com)
-- Merge branch 'develop' into main (johnson_jesse@bah.com)
-- updating names (johnson_jesse@bah.com)
-- initial commit (johnson_jesse@bah.com)
+- upgrade SB (jesseajohnson@pm.me)
+- Merge branch 'develop' into main (jesseajohnson@pm.me)
+- updating names (jesseajohnson@pm.me)
+- initial commit (jesseajohnson@pm.me)
 - Initial commit ([@johnson-jesse](https://github.com/johnson-jesse))
 
-#### Authors: 2
+#### Authors: 1
 
-- Jesse (johnson_jesse@bah.com)
 - Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
 
 ---
@@ -519,18 +503,17 @@
 
 #### 🐛 Bug Fix
 
-- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (johnson_jesse@bah.com [@johnson-jesse](https://github.com/johnson-jesse))
+- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (jesseajohnson@pm.me [@johnson-jesse](https://github.com/johnson-jesse))
 
 #### ⚠️ Pushed to `main`
 
-- Merge branch 'develop' into main (johnson_jesse@bah.com)
-- updating names (johnson_jesse@bah.com)
-- initial commit (johnson_jesse@bah.com)
+- Merge branch 'develop' into main (jesseajohnson@pm.me)
+- updating names (jesseajohnson@pm.me)
+- initial commit (jesseajohnson@pm.me)
 - Initial commit ([@johnson-jesse](https://github.com/johnson-jesse))
 
-#### Authors: 2
+#### Authors: 1
 
-- Jesse (johnson_jesse@bah.com)
 - Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
 
 ---
@@ -539,16 +522,15 @@
 
 #### 🐛 Bug Fix
 
-- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (johnson_jesse@bah.com [@johnson-jesse](https://github.com/johnson-jesse))
+- Develop [#1](https://github.com/johnson-jesse/storylab/pull/1) (jesseajohnson@pm.me [@johnson-jesse](https://github.com/johnson-jesse))
 
 #### ⚠️ Pushed to `main`
 
-- Merge branch 'develop' into main (johnson_jesse@bah.com)
-- updating names (johnson_jesse@bah.com)
-- initial commit (johnson_jesse@bah.com)
+- Merge branch 'develop' into main (jesseajohnson@pm.me)
+- updating names (jesseajohnson@pm.me)
+- initial commit (jesseajohnson@pm.me)
 - Initial commit ([@johnson-jesse](https://github.com/johnson-jesse))
 
-#### Authors: 2
+#### Authors: 1
 
-- Jesse (johnson_jesse@bah.com)
 - Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
