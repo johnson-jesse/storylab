@@ -85,7 +85,7 @@
     "access": "public"
   },
   "storybook": {
-    "displayName": "StoryLab",
+    "displayName": "Storylab",
     "supportedFrameworks": [
       "react",
       "vue",
