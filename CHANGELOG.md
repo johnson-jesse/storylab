@@ -1,3 +1,15 @@
+# v0.0.15 (Thu Sep 02 2021)
+
+#### ⚠️ Pushed to `main`
+
+- Update README.md ([@johnson-jesse](https://github.com/johnson-jesse))
+
+#### Authors: 1
+
+- Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
+
+---
+
 # v0.0.14 (Thu Sep 02 2021)
 
 #### ⚠️ Pushed to `main`
