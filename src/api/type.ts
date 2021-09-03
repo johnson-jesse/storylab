@@ -1,3 +1,5 @@
+import { Label } from "src/components/Label";
+
 export type Person = {
   id: number;
   name: string;
@@ -31,3 +33,14 @@ export type References = {
   relative: string;
   full: string;
 };
+
+export type List = {
+  id: number;
+  label: Label;
+}
+
+export type Board = {
+  id: number;
+  name: string;
+  lists: List[];
+}
