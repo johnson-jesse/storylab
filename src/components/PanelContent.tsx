@@ -1,10 +1,12 @@
-import { useParameter } from "@storybook/api";
+import { useGlobals, useParameter } from "@storybook/api";
 import { Button, TabsState } from "@storybook/components";
 import { convert, styled, themes } from "@storybook/theming";
 import React from "react";
+import useFilteredProject from "../api/useFilteredProject";
 import { PARAM_KEY } from "../constants";
-import Issue, { IssueState, useIssue } from "./Issue";
-import Label, { useLabel, Label as LabelType } from "./Label";
+import { useProject } from "./Board";
+import Issue from "./Issue";
+import Label, { useLabel } from "./Label";
 
 export const RequestDataButton = styled(Button)({
   marginTop: "1rem",
@@ -21,14 +23,12 @@ interface PanelContentProps {
   clearData: () => void;
 }
 
-/**
- * Checkout https://github.com/storybookjs/storybook/blob/next/addons/jest/src/components/Panel.tsx
- * for a real world example
- */
 export const PanelContent: React.FC<PanelContentProps> = () => {
-  const param = useParameter<string>(PARAM_KEY);
-  const label = useLabel(param);
-  const issue = useIssue(param);
+  const ident = useParameter<string>(PARAM_KEY);
+  const [{ myAddon }] = useGlobals();
+  const { project } = useProject(myAddon);
+  const label = useLabel(myAddon, ident);
+  const filtered = useFilteredProject(myAddon, ident, project);
 
   return (
     <TabsState
@@ -38,33 +38,25 @@ export const PanelContent: React.FC<PanelContentProps> = () => {
       <div
         id="overview"
         title="Overview"
-        color={convert(themes.normal).color.positive}
+        color={convert(themes.normal).color.darkest}
       >
         <div style={{ padding: '1em' }}>
-          <Label label={label} />
+          {label.name && <Label {...label} />}
+          {!label.name && `Enable this add-on by selection the GitLab icon in the toolbar above`}
         </div>
       </div>
-      <div
-        id="danger"
-        title={`${issue.danger.length} Idle`}
-        color={convert(themes.normal).color.negative}
-      >
-        {issue.danger.length > 0 && <Issue param={param} issue={issue.danger} />}
-      </div>
-      <div
-        id="warning"
-        title={`${issue.warning.length} Active`}
-        color={convert(themes.normal).color.warning}
-      >
-        {issue.warning.length > 0 && <Issue param={param} issue={issue.warning} />}
-      </div>
-      <div
-        id="closed"
-        title={`${issue.closed.length} Closed`}
-        color={convert(themes.normal).color.primary}
-      >
-        {issue.closed.length > 0 && <Issue param={param} issue={issue.closed} />}
-      </div>
+      {
+        project && project[0].lists.map(i => (
+          <div
+            key={i.id}
+            id={`${i.id}`}
+            title={`${filtered[i.label.name].length} ${i.label.name}`}
+            color={i.label.color}
+          >
+            <Issue ident={ident} issue={filtered[i.label.name]} />
+          </div>
+        ))
+      }
     </TabsState>
   );
 };

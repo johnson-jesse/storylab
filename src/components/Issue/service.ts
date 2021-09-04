@@ -8,12 +8,13 @@ function url(name: string) {
   return `${storylab_base}/issues?labels=${encodeLabel(name)}`;
 }
 
-export async function getIssueByLabelName(name: string): Promise<IssueState> {
+export async function getIssueByLabelName(name: string): Promise<Issue[]> {
   const response = await fetch(url(name), {
     ...header(),
   });
   const data = await response.json();
-  return sortAsType(data);
+  //return sortAsType(data);
+  return data;
 }
 
 export function sortAsType(issue: Issue[]): IssueState {

@@ -9,7 +9,7 @@ export const Tool = () => {
   const toggleMyTool = useCallback(
     () =>
       updateGlobals({
-        myAddon: myAddon ? undefined : true,
+        myAddon: myAddon ? undefined : true
       }),
     [myAddon]
   );
@@ -18,14 +18,10 @@ export const Tool = () => {
     <IconButton
       key={TOOL_ID}
       active={myAddon}
-      title="Enable my addon"
+      title="Enable Storylab"
       onClick={toggleMyTool}
     >
-      {/*
-        Checkout https://next--storybookjs.netlify.app/official-storybook/?path=/story/basics-icon--labels
-        for the full list of icons
-      */}
-      <Icons icon="lightning" />
+      <Icons icon="gitlab" />
     </IconButton>
   );
 };

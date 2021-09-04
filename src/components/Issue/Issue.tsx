@@ -38,7 +38,7 @@ const Styles = styled.div`
   }
 `;
 
-export default function Issue({ param, issue }: Props) {
+export default function Issue({ ident, issue }: Props) {
   const columns = React.useMemo(
     () => [
       {
@@ -46,8 +46,8 @@ export default function Issue({ param, issue }: Props) {
         accessor: "title",
       },
       {
-        Header: "Author",
-        accessor: "author.name",
+        Header: "Assignee",
+        accessor: "assignee.name",
       },
       {
         Header: "Link",
@@ -64,11 +64,13 @@ export default function Issue({ param, issue }: Props) {
         Cell: ({ cell: { value } }: any) => {
           if (!value) return null;
           return value
-            .filter((i: string) => i !== param)
+            .filter((i: string) => i !== ident)
             .map((i: string) => (
               <Label
                 key={i}
-                label={{ name: i, color: "black", text_color: "white" }}
+                name={i}
+                color='black'
+                text_color='white'
               />
             ));
         },
