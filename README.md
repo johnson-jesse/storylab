@@ -1,4 +1,4 @@
-# Storylab [![npm version](https://badge.fury.io/js/survey-monkey-streams.svg)](//www.npmjs.com/package/@2-bit/storylab)
+# Storylab
 The GitLab + Storybook integration
 
 ![](https://raw.githubusercontent.com/johnson-jesse/storylab/main/.github/images/storylab.png)
