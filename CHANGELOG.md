@@ -1,3 +1,16 @@
+# v0.0.17 (Sat Sep 04 2021)
+
+#### ⚠️ Pushed to `main`
+
+- First minor version! ([@johnson-jesse](https://github.com/johnson-jesse))
+- servicing issue board ([@johnson-jesse](https://github.com/johnson-jesse))
+
+#### Authors: 1
+
+- Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
+
+---
+
 # v0.0.17 (Thu Sep 02 2021)
 
 
