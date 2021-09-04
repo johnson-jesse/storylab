@@ -4,20 +4,20 @@ import { Icons, IconButton } from "@storybook/components";
 import { TOOL_ID } from "./constants";
 
 export const Tool = () => {
-  const [{ myAddon }, updateGlobals] = useGlobals();
+  const [{ storylab }, updateGlobals] = useGlobals();
 
   const toggleMyTool = useCallback(
     () =>
       updateGlobals({
-        myAddon: myAddon ? undefined : true
+        storylab: storylab ? undefined : true
       }),
-    [myAddon]
+    [storylab]
   );
 
   return (
     <IconButton
       key={TOOL_ID}
-      active={myAddon}
+      active={storylab}
       title="Enable Storylab"
       onClick={toggleMyTool}
     >

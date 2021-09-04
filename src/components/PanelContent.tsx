@@ -25,10 +25,10 @@ interface PanelContentProps {
 
 export const PanelContent: React.FC<PanelContentProps> = () => {
   const ident = useParameter<string>(PARAM_KEY);
-  const [{ myAddon }] = useGlobals();
-  const { project } = useProject(myAddon);
-  const label = useLabel(myAddon, ident);
-  const filtered = useFilteredProject(myAddon, ident, project);
+  const [{ storylab }] = useGlobals();
+  const { project } = useProject(storylab);
+  const label = useLabel(storylab, ident);
+  const filtered = useFilteredProject(storylab, ident, project);
 
   return (
     <TabsState
@@ -42,7 +42,7 @@ export const PanelContent: React.FC<PanelContentProps> = () => {
       >
         <div style={{ padding: '1em' }}>
           {label.name && <Label {...label} />}
-          {!label.name && `Enable this add-on by selection the GitLab icon in the toolbar above`}
+          {!label.name && `Enable this add-on by selecting the GitLab icon in the toolbar above`}
         </div>
       </div>
       {
