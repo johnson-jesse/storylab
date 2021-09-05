@@ -52,11 +52,13 @@ export default function Issue({ ident, issue }: Props) {
       {
         Header: "Link",
         accessor: "web_url",
-        Cell: ({ cell: { value } }: any) => (
-          <a href={value} target="_blank">
-            GitLab Link
-          </a>
-        ),
+        Cell: (props: any) => {
+          return (
+            <a href={props.cell.row.values.web_url} target="_blank">
+              Issue {props.data[props.cell.row.index].iid}
+              </a>
+          )
+        }
       },
       {
         Header: "Labels",

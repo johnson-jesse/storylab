@@ -1,16 +1,13 @@
 import { useGlobals, useParameter } from "@storybook/api";
-import { Button, TabsState } from "@storybook/components";
-import { convert, styled, themes } from "@storybook/theming";
+import { TabsState } from "@storybook/components";
+import { convert, themes } from "@storybook/theming";
 import React from "react";
 import useFilteredProject from "../api/useFilteredProject";
 import { PARAM_KEY } from "../constants";
 import { useProject } from "./Board";
+import Create from "./Create/Create";
 import Issue from "./Issue";
 import Label, { useLabel } from "./Label";
-
-export const RequestDataButton = styled(Button)({
-  marginTop: "1rem",
-});
 
 type Results = {
   danger: any[];
@@ -41,10 +38,19 @@ export const PanelContent: React.FC<PanelContentProps> = () => {
         color={convert(themes.normal).color.darkest}
       >
         <div style={{ padding: '1em' }}>
-          {label.name && <Label {...label} />}
-          {!label.name && `Enable this add-on by selecting the GitLab icon in the toolbar above`}
+          {storylab && <Label {...label} />}
+          {!storylab && `Enable this add-on by selecting the GitLab icon in the toolbar above`}
         </div>
       </div>
+      {storylab && <div
+        id="create"
+        title="New Issue"
+        color={convert(themes.normal).color.orange}
+      >
+        {({ active }: { active: boolean; selected: string }) =>
+          active ? <div key='create-tab' style={{ padding: '1em' }}><Create /></div> : null
+        }
+      </div>}
       {
         project && project[0].lists.map(i => (
           <div

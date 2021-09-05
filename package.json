@@ -96,6 +96,7 @@
     "icon": "https://raw.githubusercontent.com/johnson-jesse/storylab/main/.github/images/gitlab-logomark-rgb.png"
   },
   "dependencies": {
+    "react-hook-form": "^7.14.2",
     "react-table": "^7.7.0",
     "styled-components": "^5.3.1"
   },
