@@ -1,3 +1,18 @@
+# v0.0.23 (Sun Sep 05 2021)
+
+#### ⚠️ Pushed to `main`
+
+- Add new issue complete ([@johnson-jesse](https://github.com/johnson-jesse))
+- Added create tab ([@johnson-jesse](https://github.com/johnson-jesse))
+- change addon param name. remove decorator ([@johnson-jesse](https://github.com/johnson-jesse))
+- Merge branch 'main' of https://github.com/johnson-jesse/storylab into main ([@johnson-jesse](https://github.com/johnson-jesse))
+
+#### Authors: 1
+
+- Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
+
+---
+
 # v0.0.22 (Sat Sep 04 2021)
 
 #### ⚠️ Pushed to `main`
