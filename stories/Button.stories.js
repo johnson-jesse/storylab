@@ -2,11 +2,8 @@ import React from "react";
 import { Button } from "./Button";
 
 export default {
-  title: "Widget/Button",
-  component: Button,
-  parameters: {
-    "storylab": 'Widget/Button',
-  },
+  title: "Widget/Button/Action",
+  component: Button
 };
 
 const Template = (args) => <Button {...args} />;

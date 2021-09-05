@@ -1,5 +1,5 @@
 import React from "react";
-import { useAsync } from "../..//api";
+import { useAsync } from "../../api";
 import { getIssueByLabelName } from "./service";
 import { Issue } from "./type";
 

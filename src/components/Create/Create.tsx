@@ -4,18 +4,30 @@ import { useForm } from 'react-hook-form';
 import { Style } from './style';
 import Label, { useProjectLabel } from "../Label";
 import { Loader } from "@storybook/components";
+import { Form } from "./type";
+import { postIssue } from "./service";
+import { Issue } from "../Issue/type";
 
 export default function Create() {
     const [pending, setPending] = React.useState(false);
+    const [issue, setIssue] = React.useState<Issue>();
     const state = useStorybookState();
     const pl = useProjectLabel(true);
+
     const {
         register,
         handleSubmit,
         formState,
-    } = useForm();
+        reset
+    } = useForm<Form>();
 
-    const onSubmit = (data: any) => setPending(true);
+    const onSubmit = async (form: Form) => {
+        setPending(true);
+        const result = await postIssue(form);
+        setPending(false);
+        setIssue(result);
+        reset();
+    };
 
     return (
         <Style>
@@ -24,17 +36,24 @@ export default function Create() {
                 <input placeholder='title' {...register("title", { required: true, })} disabled={pending} />
                 <label htmlFor="description" className={formState.errors.description && 'error'}>Description</label>
                 <input placeholder='description' {...register("description", { required: true })} disabled={pending} />
-                <label htmlFor="identifying">Identifying Label</label>
-                <input placeholder={`${state.storyId}`} {...register("identifying")} disabled />
+                <label htmlFor="identifyer">Identifying Label</label>
+                <input value={`${state.storyId}`} {...register("identifyer")} readOnly />
                 <label htmlFor="other">Other labels:</label>
                 <select id="other" {...register("other")} multiple disabled={pending}>
                     {
-                        pl.map(l => (
+                        pl.filter(l => !state.storiesHash.hasOwnProperty(l.name)).map(l => (
                             <option key={l.id} value={l.name}>{l.name}</option>
                         ))
                     }
                 </select>
-                <div className='sl-loader-wrapper'>{pending && <Loader role="progressbar" className='sl-loader' />}</div>
+                <div className='sl-loader-wrapper'>
+                    {pending && <Loader role="progressbar" className='sl-loader' />}
+                    {!pending && issue && (
+                        <a href={issue.web_url} target="_blank">
+                            New issue {issue.iid} created
+                        </a>
+                    )}
+                </div>
                 <input className='sl-submit' type="submit" disabled={pending} />
             </form>
         </Style>

@@ -12,9 +12,7 @@ export async function getIssueByLabelName(name: string): Promise<Issue[]> {
   const response = await fetch(url(name), {
     ...header(),
   });
-  const data = await response.json();
-  //return sortAsType(data);
-  return data;
+  return await response.json();
 }
 
 export function sortAsType(issue: Issue[]): IssueState {
