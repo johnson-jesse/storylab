@@ -1,4 +1,6 @@
-# Storylab ![](https://img.shields.io/npm/v/@2-bit/storylab?color=success&logoColor=orange&style=plastic) ![](https://img.shields.io/github/last-commit/johnson-jesse/storylab?color=blueviolet&style=plastic)
+# Storylab
+![](https://img.shields.io/npm/v/@2-bit/storylab?color=success&logoColor=orange&style=plastic)  
+![](https://img.shields.io/github/last-commit/johnson-jesse/storylab?color=blueviolet&style=plastic)
 
 The GitLab + Storybook integration
 ---
