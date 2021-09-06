@@ -1,3 +1,15 @@
+# v0.0.29 (Mon Sep 06 2021)
+
+#### 🐛 Bug Fix
+
+- Better readme page layout [#4](https://github.com/johnson-jesse/storylab/pull/4) ([@johnson-jesse](https://github.com/johnson-jesse))
+
+#### Authors: 1
+
+- Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
+
+---
+
 # v0.0.28 (Mon Sep 06 2021)
 
 #### 🐛 Bug Fix
