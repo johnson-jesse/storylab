@@ -1,3 +1,15 @@
+# v1.0.30 (Mon Sep 06 2021)
+
+#### 🐛 Bug Fix
+
+- Documentation update [#5](https://github.com/johnson-jesse/storylab/pull/5) ([@johnson-jesse](https://github.com/johnson-jesse))
+
+#### Authors: 1
+
+- Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
+
+---
+
 # v0.0.29 (Mon Sep 06 2021)
 
 #### 🐛 Bug Fix
