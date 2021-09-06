@@ -1,6 +1,6 @@
 # Storylab
-![](https://img.shields.io/npm/v/@2-bit/storylab?color=success&logoColor=orange&style=plastic)  
-![](https://img.shields.io/github/last-commit/johnson-jesse/storylab?color=blueviolet&style=plastic)
+![](https://img.shields.io/npm/v/@2-bit/storylab?color=success&logoColor=orange&style=plastic)    
+![](https://img.shields.io/github/last-commit/johnson-jesse/storylab?color=blueviolet&style=plastic)  
 
 The GitLab + Storybook integration
 ---
@@ -25,11 +25,11 @@ SL_GL_TOKEN=<gitlab_personal_access_token>
 ## Develop
 The Storylab addon works with GitLab by looking for any issues with matching labels. i.e. [GitLab label](https://docs.gitlab.com/ee/user/project/labels.html).
 
-Matching components and issues works out of the box. Following *Storybook's* naming convention as normal. Storylab will automatically fetch data by the story's group title. This translates from `Widget/Button` to `widget-button`. And `Widget/button` with the _Large_ variant to `widget-button--large`.
+Matching components and issues works out of the box. Simply follow *Storybook's* naming convention as normal. Storylab will automatically fetch data by the story's group title. This translates from `Widget/Button` to `widget-button`. And `Widget/button` with the _Large_ variant to `widget-button--large`.
 
 ```jsx
 export default {
-  title: "Widget/Button/Action",
+  title: "Widget/Button",
   component: Button
 };
 
