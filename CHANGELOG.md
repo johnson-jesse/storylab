@@ -1,3 +1,20 @@
+# v0.0.24 (Mon Sep 06 2021)
+
+#### 🐛 Bug Fix
+
+- Develop [#2](https://github.com/johnson-jesse/storylab/pull/2) ([@johnson-jesse](https://github.com/johnson-jesse))
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/johnson-jesse/storylab into main ([@johnson-jesse](https://github.com/johnson-jesse))
+- Major v1 release ([@johnson-jesse](https://github.com/johnson-jesse))
+
+#### Authors: 1
+
+- Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
+
+---
+
 # v0.0.24 (Sun Sep 05 2021)
 
 #### ⚠️ Pushed to `main`
