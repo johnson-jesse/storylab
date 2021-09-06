@@ -38,7 +38,7 @@ const Styles = styled.div`
   }
 `;
 
-export default function Issue({ ident, issue }: Props) {
+export default function Issue({ storiesHash, issue }: Props) {
   const columns = React.useMemo(
     () => [
       {
@@ -56,7 +56,7 @@ export default function Issue({ ident, issue }: Props) {
           return (
             <a href={props.cell.row.values.web_url} target="_blank">
               Issue {props.data[props.cell.row.index].iid}
-              </a>
+            </a>
           )
         }
       },
@@ -66,7 +66,7 @@ export default function Issue({ ident, issue }: Props) {
         Cell: ({ cell: { value } }: any) => {
           if (!value) return null;
           return value
-            .filter((i: string) => i !== ident)
+            .filter((i: string) => !storiesHash.hasOwnProperty(i))
             .map((i: string) => (
               <Label
                 key={i}

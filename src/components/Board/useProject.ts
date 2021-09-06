@@ -4,7 +4,7 @@ import { PARAM_KEY } from "../../constants";
 import { getBoard } from "./service";
 import { BoardService, initial } from "./type";
 
-export function useProject(enabled: boolean): BoardService {
+export function useProject(): BoardService {
     const [project, setProject] = useAddonState(PARAM_KEY, initial);
 
     const fetch = React.useCallback(() => {
@@ -12,9 +12,8 @@ export function useProject(enabled: boolean): BoardService {
     }, []);
 
     React.useEffect(() => {
-        if (enabled) fetch();
-        else setProject(null);
-    }, [enabled]);
+        fetch();
+    }, []);
 
     return {
         project,

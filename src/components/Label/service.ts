@@ -9,7 +9,7 @@ function url() {
 export async function getLabel(name: string): Promise<Label> {
   const response = await fetch(`${url()}/${encodeLabel(name)}`, {
     ...header(),
-  });
+  })
   const data = await response.json();
   return data;
 }

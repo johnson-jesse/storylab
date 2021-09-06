@@ -1,31 +1,24 @@
-import { useGlobals, useParameter } from "@storybook/api";
+import { useStorybookState } from "@storybook/api";
 import { TabsState } from "@storybook/components";
 import { convert, themes } from "@storybook/theming";
 import React from "react";
+import { GroupIdent } from "../api";
 import useFilteredProject from "../api/useFilteredProject";
-import { PARAM_KEY } from "../constants";
 import { useProject } from "./Board";
 import Create from "./Create/Create";
 import Issue from "./Issue";
 import Label, { useLabel } from "./Label";
 
-type Results = {
-  danger: any[];
-  warning: any[];
-};
-
-interface PanelContentProps {
-  results: Results;
-  fetchData: () => void;
-  clearData: () => void;
+type Props = {
+  group: GroupIdent;
+  storyKey: string;
+  storiesHash: { [id: string]: any };
 }
 
-export const PanelContent: React.FC<PanelContentProps> = () => {
-  const ident = useParameter<string>(PARAM_KEY);
-  const [{ storylab }] = useGlobals();
-  const { project } = useProject(storylab);
-  const label = useLabel(storylab, ident);
-  const filtered = useFilteredProject(storylab, ident, project);
+function Content(props: Props) {
+  const label = useLabel(props.group);
+  const { project } = useProject();
+  const { filtered, fetch } = useFilteredProject(props.group, project);
 
   return (
     <TabsState
@@ -38,31 +31,51 @@ export const PanelContent: React.FC<PanelContentProps> = () => {
         color={convert(themes.normal).color.darkest}
       >
         <div style={{ padding: '1em' }}>
-          {storylab && <Label {...label} />}
-          {!storylab && `Enable this add-on by selecting the GitLab icon in the toolbar above`}
+          {<Label {...label} />}
         </div>
       </div>
-      {storylab && <div
+      <div
         id="create"
         title="New Issue"
         color={convert(themes.normal).color.orange}
       >
         {({ active }: { active: boolean; selected: string }) =>
-          active ? <div key='create-tab' style={{ padding: '1em' }}><Create /></div> : null
+          active ? <div key='create-tab' style={{ padding: '1em' }}><Create refresh={fetch} /></div> : null
         }
-      </div>}
+      </div>
       {
-        project && project[0].lists.map(i => (
-          <div
-            key={i.id}
-            id={`${i.id}`}
-            title={`${filtered[i.label.name].length} ${i.label.name}`}
-            color={i.label.color}
-          >
-            <Issue ident={ident} issue={filtered[i.label.name]} />
-          </div>
-        ))
+        Object.entries(filtered).map(([key, value]) => {
+          const list = project[0].lists.find(l => l.label.name === key)
+            || { label: { color: 'grey' } };
+
+          return (
+            <div
+              key={key}
+              id={key}
+              title={`${value.length} ${key}`}
+              color={list.label.color}
+            >
+              <Issue storiesHash={props.storiesHash} issue={value} />
+            </div>
+          )
+        })
       }
     </TabsState>
   );
 };
+
+function areEqual(prevProps: Props, nextProps: Props) {
+  return (
+    prevProps.group === nextProps.group &&
+    prevProps.storiesHash === nextProps.storiesHash
+  );
+}
+
+const MemoContent = React.memo(Content, areEqual);
+
+export function PanelContent() {
+  const state = useStorybookState();
+  const group = state.storyId.split('--')[0] as GroupIdent;
+  return state.globals.storylab ? <MemoContent group={group} storyKey={state.storyId} storiesHash={state.storiesHash} />
+    : <span>Enable this add-on by selecting the GitLab icon in the toolbar above</span>
+}

@@ -4,13 +4,12 @@ import { getLabel } from "./service";
 import { Props } from "./type";
 
 const initial: Props = { name: '', color: '', text_color: '' };
-export function useLabel(enabled: boolean, param: string) {
-  const { data, run, reset } = useAsync(initial);
+export function useLabel(param: string) {
+  const { data, run } = useAsync(initial);
 
   React.useEffect(() => {
-    if(enabled && param) run(getLabel(param));
-    else reset();
-  }, [enabled, param]);
+    if(param) run(getLabel(param));
+  }, [param]);
 
   return data;
 }

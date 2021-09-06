@@ -1,4 +1,4 @@
-export const ADDON_TITLE = "StoryLab"
+export const ADDON_TITLE = "Storylab"
 export const ADDON_ID = "storybook/@gbit/storylab";
 export const TOOL_ID = `${ADDON_ID}/tool`;
 export const PANEL_ID = `${ADDON_ID}/panel`;

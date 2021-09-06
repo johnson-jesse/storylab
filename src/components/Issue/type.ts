@@ -5,7 +5,6 @@ import {
   Links,
   References,
   Milestone,
-  Ident,
 } from "../../api/type";
 
 export type IssueState = {
@@ -50,6 +49,6 @@ export type Issue = {
 }
 
 export type Props = {
-  ident: Ident;
+  storiesHash: { [id: string]: any };
   issue: Issue[];
 };

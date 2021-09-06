@@ -1,6 +1,6 @@
 import { Label } from "src/components/Label";
 
-export type Ident = string;
+export type GroupIdent = string;
 
 export type Person = {
   id: number;

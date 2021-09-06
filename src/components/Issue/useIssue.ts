@@ -4,13 +4,20 @@ import { getIssueByLabelName } from "./service";
 import { Issue } from "./type";
 
 const initial: Issue[] = [];
-export function useIssue(enabled: boolean, param: string) {
+export function useIssue(group: string) {
   const { data, run, reset } = useAsync<Issue[]>(initial);
 
-  React.useEffect(() => {
-    if (enabled && param) run(getIssueByLabelName(param));
-    else reset();
-  }, [enabled, param]);
+  const fetch = React.useCallback(() => {
+    run(getIssueByLabelName(group));
+  }, [group]);
 
-  return data;
+  React.useEffect(() => {
+    if (group) fetch();
+    else reset();
+  }, [group]);
+
+  return {
+    data,
+    fetch
+  }
 }

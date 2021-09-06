@@ -2,13 +2,13 @@ import React from "react";
 import { useStorybookState } from '@storybook/api';
 import { useForm } from 'react-hook-form';
 import { Style } from './style';
-import Label, { useProjectLabel } from "../Label";
+import { useProjectLabel } from "../Label";
 import { Loader } from "@storybook/components";
 import { Form } from "./type";
 import { postIssue } from "./service";
 import { Issue } from "../Issue/type";
 
-export default function Create() {
+export default function Create({ refresh }: { refresh: () => void }) {
     const [pending, setPending] = React.useState(false);
     const [issue, setIssue] = React.useState<Issue>();
     const state = useStorybookState();
@@ -27,6 +27,7 @@ export default function Create() {
         setPending(false);
         setIssue(result);
         reset();
+        refresh();
     };
 
     return (
