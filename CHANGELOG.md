@@ -1,3 +1,15 @@
+# v0.0.24 (Sun Sep 05 2021)
+
+#### ⚠️ Pushed to `main`
+
+- Major v1 release (jesseajohnson@pm.me)
+
+#### Authors: 1
+
+- Jesse A Johnson (jesseajohnson@pm.me)
+
+---
+
 # v0.0.22 (Sat Sep 04 2021)
 
 #### ⚠️ Pushed to `main`
