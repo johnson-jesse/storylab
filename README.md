@@ -20,38 +20,22 @@ SL_GL_TOKEN=<gitlab_personal_access_token>
 ### Develop
 The Storylab addon works with GitLab by looking for any issues with matching labels. i.e. [GitLab label](https://docs.gitlab.com/ee/user/project/labels.html).
 
-Open a stories file and modify the parameters. Set `storylab` equal to your button's identifying label in GitLab.
+Following *Storybook's* naming convention with `/`'s, Storylab will automatically fetch data by the story title. The translates from `Widget/<component_name>` to `Widget-<component_name>`.
 
-```tsx
-// Button.stories.js
+New issues created through Storylab will add, by default, two labels, `<group_name>-<component_name>` and `<group_name>-<component_name>--<variant_name>`. Labels are add all lowercase. So you might see something like this: `widget-button--large`.
 
-export default {
-  title: "Button",
-  component: Button,
-  parameters: {
-    "storylab": 'Widget/Button', // "storylab": "<GitLab label>"
-  },
-};
-```
-
-### Component Story Param Naming
-Try to establish a project wide convention for component labels. What you choose is entirely up to you. Maybe this can get you started:
-
-* `Widget/<component_name>` - This is your smallest component within your codebase
-* `Feature/<component_name>` - This is some combination of elements that do somehting cool
-* `Page/<component_name>` - One of your amazing full page views
-
-Storylab will take this parameter and return any issues that have this label attached. Consider this a component identifying label.
+### Component & Label Naming
+We recommend sticking to *Storybook's* naming convention for your component stories. For labels, no particular pattern is necessary except when tying an tie an issue directly to your story. Add `<group_name>-<component_name>` to group like components.
 
 ### Making this addon more awesome! 🤘
-- [ ] Add open new issue feature
+- [x] Add open new issue feature
 - [ ] Add label status change feature
-- [x] Add support for custom labels instead of `Progress`, `Review`, `Acceptance`, `Done`.
+- [x] Add support for custom labels instead of `Progress`, `Review`, `Acceptance`, `Done`. Board labels are fetched and used automatically.
 - [x] Automatically handle getting board labels rather than using env.
-- [ ] Make the `SL_GL_PROJECT_ID` optional and load the first project by default
+- [ ] Make the `SL_GL_PROJECT_ID` optional and load the first project by default~~
 - [ ] Make projects selectable in the panel
 - [ ] Make boards selectable in the panel
-- [x] Make component identifiying labesl url safe
+- [x] Make component identifying labels url safe
 - [ ] Provide richer set of information for the overview tab
 
 ### Missing a feature?
