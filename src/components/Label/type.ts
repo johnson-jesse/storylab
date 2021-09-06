@@ -1,4 +1,6 @@
-export type Props = Pick<Label, 'name' | 'color' | 'text_color'>;
+export type Props = 
+  { name: string, color: string, background: string, className?: string } |
+  { children: any, color: string, background: string, className?: string }
 
 export type Label = {
   id: number;

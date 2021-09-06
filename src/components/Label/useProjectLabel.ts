@@ -4,13 +4,19 @@ import { getProjectLabel } from "./service";
 import { Label } from "./type";
 
 const initial: Label[] = [];
-export function useProjectLabel(enabled: boolean) {
-  const { data, run, reset } = useAsync(initial);
+export function useProjectLabel() {
+  const { data, run } = useAsync(initial);
+
+  const refresh = React.useCallback(() => {
+    run(getProjectLabel());
+  }, []);
 
   React.useEffect(() => {
-    if(enabled) run(getProjectLabel());
-    else reset();
-  }, [enabled]);
+    refresh();
+  }, []);
 
-  return data;
+  return {
+    label: data,
+    refresh
+  };
 }
