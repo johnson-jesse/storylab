@@ -1,3 +1,16 @@
+# v0.0.24 (Sun Sep 05 2021)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/johnson-jesse/storylab into main (jesseajohnson@pm.me)
+- Major v1 release (jesseajohnson@pm.me)
+
+#### Authors: 1
+
+- Jesse A Johnson (jesseajohnson@pm.me)
+
+---
+
 # v0.0.23 (Sun Sep 05 2021)
 
 #### ⚠️ Pushed to `main`
