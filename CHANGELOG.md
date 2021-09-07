@@ -1,5 +1,22 @@
 # v1.0.31 (Tue Sep 07 2021)
 
+#### 🐛 Bug Fix
+
+- Bump [#6](https://github.com/johnson-jesse/storylab/pull/6) ([@johnson-jesse](https://github.com/johnson-jesse))
+
+#### ⚠️ Pushed to `main`
+
+- Update with missing Label prop ([@johnson-jesse](https://github.com/johnson-jesse))
+- fixing split bug ([@johnson-jesse](https://github.com/johnson-jesse))
+
+#### Authors: 1
+
+- Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
+
+---
+
+# v1.0.31 (Tue Sep 07 2021)
+
 #### ⚠️ Pushed to `main`
 
 - Update with missing Label prop ([@johnson-jesse](https://github.com/johnson-jesse))
