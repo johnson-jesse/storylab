@@ -1,4 +1,4 @@
-export type Props = Pick<Label, 'name' | 'color' | 'text_color'>;
+export type Props = Pick<Label, 'name' | 'color' | 'text_color'> & { group: string };
 
 export type Label = {
   id: number;
