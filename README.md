@@ -7,11 +7,13 @@ The GitLab + Storybook integration
 
 Add new issues. Quick view issues by component title.
 
+- Fixed breaking issue with 1.0.30 "split"
+
 ![](https://raw.githubusercontent.com/johnson-jesse/storylab/main/.github/images/storylab-2.png)
 
 ## Setup
 
-Add environment variables. see `.env.example`
+Add environment variables
 
 ```bash
 SL_GL_PROJECT_ID=<gitlab_repository_name_id>
