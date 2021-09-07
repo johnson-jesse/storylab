@@ -1,3 +1,16 @@
+# v1.0.31 (Tue Sep 07 2021)
+
+#### ⚠️ Pushed to `main`
+
+- Update with missing Label prop (jesseajohnson@pm.me)
+- fixing split bug (jesseajohnson@pm.me)
+
+#### Authors: 1
+
+- Jesse A Johnson (jesseajohnson@pm.me)
+
+---
+
 # v1.0.30 (Mon Sep 06 2021)
 
 #### 🐛 Bug Fix
