@@ -8,7 +8,7 @@ export function useProjectLabel() {
   const { data, run } = useAsync(initial);
 
   const refresh = React.useCallback(() => {
-    run(getProjectLabel());
+    run(getProjectLabel(), true);
   }, []);
 
   React.useEffect(() => {

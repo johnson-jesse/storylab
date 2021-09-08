@@ -34,3 +34,10 @@ export async function postLabel(name: string): Promise<void> {
   });
   return await response.json();
 }
+
+export async function deleteLabel(name: string): Promise<void> {
+  await fetch(`${project_path}/labels/${encodeLabel(name)}`, {
+    method: 'DELETE',
+    ...header()
+  });
+}

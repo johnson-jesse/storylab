@@ -1,6 +1,5 @@
 export type Props = 
-  { name: string, color: string, background: string, className?: string } |
-  { children: any, color: string, background: string, className?: string }
+  { name?: string, group: string, color: string, background: string, className?: string, children?: any }
 
 export type Label = {
   id: number;

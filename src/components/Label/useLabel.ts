@@ -3,7 +3,7 @@ import { useAsync } from "../../api";
 import { getLabel } from "./service";
 import { Label } from "./type";
 
-const initial: Pick<Label, 'name' | 'color' | 'text_color' > = { name: '', color: '', text_color: '' };
+const initial: Pick<Label, 'name' | 'color' | 'text_color'> = { name: '', color: '', text_color: '' };
 export function useLabel(param: string) {
   const { data, run } = useAsync(initial);
 

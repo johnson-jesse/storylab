@@ -73,6 +73,7 @@ export default function Issue({ storiesHash, issue }: Props) {
                 name={i}
                 background='black'
                 color='white'
+                group={i}
               />
             ));
         },

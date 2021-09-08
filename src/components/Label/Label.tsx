@@ -1,8 +1,8 @@
 import React from 'react';
 import { Props } from './type';
 
-export default function Label({ color, background, ...props }: Props) {
-    return (
+export default function Label({ name, color, background, group, ...props }: Props) {
+    return name ? (
         <span style={{
             backgroundColor: background,
             color: color,
@@ -12,9 +12,7 @@ export default function Label({ color, background, ...props }: Props) {
             borderRadius: '15px',
             whiteSpace: 'nowrap'
         }} className={props.className}>
-            {props.hasOwnProperty('name') ?
-                (props as { name: string })['name'] :
-                (props as { children: any })['children']}
+            {name}{props.children}
         </span>
-    );
+    ) : <span>This label doesn't exist on GitLab: <i><b>{group}</b></i></span>
 }

@@ -31,7 +31,7 @@ function Content(props: Props) {
         color={convert(themes.normal).color.darkest}
       >
         <div style={{ padding: '1em' }}>
-          {<Label name={label.name} background={label.color} color={label.text_color} />}
+          {<Label name={label.name} group={props.group} background={label.color} color={label.text_color} />}
         </div>
       </div>
       <div
