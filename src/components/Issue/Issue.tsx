@@ -2,41 +2,9 @@ import React from "react";
 import { Props } from "./type";
 import { useTable } from "react-table";
 import Label from "../Label";
-import styled from "styled-components";
+import { useIssueStyle } from './style';
 
 const options = { dateStyle: 'short', timeStyle: 'short' };
-const Styles = styled.div`
-  padding: 1rem;
-
-  table {
-    border-spacing: 0;
-    border: 1px solid black;
-
-    tr {
-      :last-child {
-        td {
-          border-bottom: 0;
-        }
-      }
-    }
-
-    th,
-    td {
-      margin: 0;
-      padding: 0.5rem;
-      border-bottom: 1px solid black;
-      border-right: 1px solid black;
-
-      :last-child {
-        border-right: 0;
-      }
-    }
-
-    tr:nth-child(even) {
-      background-color: #dddddd;
-    }
-  }
-`;
 
 export default function Issue({ storiesHash, issue }: Props) {
   const columns = React.useMemo(
@@ -44,21 +12,17 @@ export default function Issue({ storiesHash, issue }: Props) {
       {
         Header: "Title",
         accessor: "title",
+        Cell: (props: any) => {
+          return (
+            <a href={props.data[props.cell.row.index].web_url} target="_blank">
+              {props.cell.row.values.title}
+            </a>
+          )
+        }
       },
       {
         Header: "Assignee",
         accessor: "assignee.name",
-      },
-      {
-        Header: "Link",
-        accessor: "web_url",
-        Cell: (props: any) => {
-          return (
-            <a href={props.cell.row.values.web_url} target="_blank">
-              Issue {props.data[props.cell.row.index].iid}
-            </a>
-          )
-        }
       },
       {
         Header: "Labels",
@@ -71,8 +35,8 @@ export default function Issue({ storiesHash, issue }: Props) {
               <Label
                 key={i}
                 name={i}
-                color='black'
-                text_color='white'
+                background='black'
+                color='white'
                 group={i}
               />
             ));
@@ -90,10 +54,11 @@ export default function Issue({ storiesHash, issue }: Props) {
   const tableInstance = useTable({ columns, data: issue as any });
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     tableInstance;
+  const style = useIssueStyle();
 
   return (
-    <Styles>
-      <table {...getTableProps()} style={{ borderCollapse: "collapse" }}>
+    <div className={style.root}>
+      <table {...getTableProps()} className={style.table}>
         <thead>
           {
             // Loop over the header rows
@@ -146,6 +111,6 @@ export default function Issue({ storiesHash, issue }: Props) {
           }
         </tbody>
       </table>
-    </Styles>
+    </div>
   );
 }

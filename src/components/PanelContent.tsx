@@ -31,7 +31,7 @@ function Content(props: Props) {
         color={convert(themes.normal).color.darkest}
       >
         <div style={{ padding: '1em' }}>
-          {<Label {...label} group={props.group} />}
+          {<Label name={label.name} group={props.group} background={label.color} color={label.text_color} />}
         </div>
       </div>
       <div
@@ -77,5 +77,9 @@ export function PanelContent() {
   const state = useStorybookState();
   const group = state.storyId && state.storyId.split('--')[0] as GroupIdent;
   return state.globals.storylab ? <MemoContent group={group} storyKey={state.storyId} storiesHash={state.storiesHash} />
-    : <span>Enable this add-on by selecting the GitLab icon in the toolbar above</span>
+    : (
+      <span>
+        Enable this add-on by selecting the GitLab icon in the toolbar above
+      </span>
+    )
 }
