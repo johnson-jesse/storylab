@@ -2,41 +2,9 @@ import React from "react";
 import { Props } from "./type";
 import { useTable } from "react-table";
 import Label from "../Label";
-// import styled from "styled-components";
+import { useIssueStyle } from './style';
 
 const options = { dateStyle: 'short', timeStyle: 'short' };
-// const Styles = styled.div`
-//   padding: 1rem;
-
-//   table {
-//     border-spacing: 0;
-//     border: 1px solid black;
-
-//     tr {
-//       :last-child {
-//         td {
-//           border-bottom: 0;
-//         }
-//       }
-//     }
-
-//     th,
-//     td {
-//       margin: 0;
-//       padding: 0.5rem;
-//       border-bottom: 1px solid black;
-//       border-right: 1px solid black;
-
-//       :last-child {
-//         border-right: 0;
-//       }
-//     }
-
-//     tr:nth-child(even) {
-//       background-color: #dddddd;
-//     }
-//   }
-// `;
 
 export default function Issue({ storiesHash, issue }: Props) {
   const columns = React.useMemo(
@@ -44,21 +12,17 @@ export default function Issue({ storiesHash, issue }: Props) {
       {
         Header: "Title",
         accessor: "title",
+        Cell: (props: any) => {
+          return (
+            <a href={props.data[props.cell.row.index].web_url} target="_blank">
+              {props.cell.row.values.title}
+            </a>
+          )
+        }
       },
       {
         Header: "Assignee",
         accessor: "assignee.name",
-      },
-      {
-        Header: "Link",
-        accessor: "web_url",
-        Cell: (props: any) => {
-          return (
-            <a href={props.cell.row.values.web_url} target="_blank">
-              Issue {props.data[props.cell.row.index].iid}
-            </a>
-          )
-        }
       },
       {
         Header: "Labels",
@@ -90,60 +54,63 @@ export default function Issue({ storiesHash, issue }: Props) {
   const tableInstance = useTable({ columns, data: issue as any });
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     tableInstance;
+  const style = useIssueStyle();
 
   return (
-    <table {...getTableProps()} style={{ borderCollapse: "collapse" }}>
-      <thead>
-        {
-          // Loop over the header rows
-          headerGroups.map((headerGroup) => (
-            // Apply the header row props
-            <tr {...headerGroup.getHeaderGroupProps()}>
-              {
-                // Loop over the headers in each row
-                headerGroup.headers.map((column) => (
-                  // Apply the header cell props
-                  <th {...column.getHeaderProps()}>
-                    {
-                      // Render the header
-                      column.render("Header")
-                    }
-                  </th>
-                ))
-              }
-            </tr>
-          ))
-        }
-      </thead>
-      {/* Apply the table body props */}
-      <tbody {...getTableBodyProps()}>
-        {
-          // Loop over the table rows
-          rows.map((row) => {
-            // Prepare the row for display
-            prepareRow(row);
-            return (
-              // Apply the row props
-              <tr {...row.getRowProps()}>
+    <div className={style.root}>
+      <table {...getTableProps()} className={style.table}>
+        <thead>
+          {
+            // Loop over the header rows
+            headerGroups.map((headerGroup) => (
+              // Apply the header row props
+              <tr {...headerGroup.getHeaderGroupProps()}>
                 {
-                  // Loop over the rows cells
-                  row.cells.map((cell) => {
-                    // Apply the cell props
-                    return (
-                      <td {...cell.getCellProps()}>
-                        {
-                          // Render the cell contents
-                          cell.render("Cell")
-                        }
-                      </td>
-                    );
-                  })
+                  // Loop over the headers in each row
+                  headerGroup.headers.map((column) => (
+                    // Apply the header cell props
+                    <th {...column.getHeaderProps()}>
+                      {
+                        // Render the header
+                        column.render("Header")
+                      }
+                    </th>
+                  ))
                 }
               </tr>
-            );
-          })
-        }
-      </tbody>
-    </table>
+            ))
+          }
+        </thead>
+        {/* Apply the table body props */}
+        <tbody {...getTableBodyProps()}>
+          {
+            // Loop over the table rows
+            rows.map((row) => {
+              // Prepare the row for display
+              prepareRow(row);
+              return (
+                // Apply the row props
+                <tr {...row.getRowProps()}>
+                  {
+                    // Loop over the rows cells
+                    row.cells.map((cell) => {
+                      // Apply the cell props
+                      return (
+                        <td {...cell.getCellProps()}>
+                          {
+                            // Render the cell contents
+                            cell.render("Cell")
+                          }
+                        </td>
+                      );
+                    })
+                  }
+                </tr>
+              );
+            })
+          }
+        </tbody>
+      </table>
+    </div>
   );
 }

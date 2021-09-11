@@ -27,8 +27,10 @@ export const TabContent: React.FC<TabContentProps> = ({ code }) => (
   <TabWrapper>
     <TabInner>
       <Title>Storylab</Title>
-      <Typography>Light grey labels don't yet exist on your GitLab project; Click to add.</Typography>
-      <Typography>Charcoal grey labels already exist; Click to remove.</Typography>
+      <Typography>Charcoal grey labels with the (x) exist on GitLab. Click the (x) to remove from GitLab.</Typography>
+      <Typography>For all other labels, click anywhere on them to create on GitLab.</Typography>
+      <br/><br/>
+      <Typography variant='caption'>Removing labels can affect what issues show in the component boards</Typography>
       <Transfer />
     </TabInner>
   </TabWrapper>

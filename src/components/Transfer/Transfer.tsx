@@ -3,7 +3,7 @@ import React from 'react';
 import { useProjectLabel } from '../Label';
 import { useTransferStyle } from './style';
 import { deleteLabel, postLabel } from "../Label/service";
-import ComponentLabel from './ComponentLabel';
+import BranchLabel from './BranchLabel';
 import LeafLabel from './LeafLabel';
 
 type Props = {
@@ -12,7 +12,7 @@ type Props = {
 
 function Content({ storiesHash: hash }: Props) {
   const { label, refresh } = useProjectLabel();
-  const style = useTransferStyle();
+  const { branch, leaf, ...style} = useTransferStyle();
 
   const handleClick = (name: string) => {
     postLabel(name).finally(() => {
@@ -33,16 +33,15 @@ function Content({ storiesHash: hash }: Props) {
         const arg = {
           key: elm.id,
           name: elm.id,
-          classes: style,
           isLive: label.some(l => l.name === elm.id),
           onClick: handleClick,
           onDelete: handleDelete
         }
 
         if (elm.isComponent)
-          return <ComponentLabel {...arg} />
+          return <BranchLabel className={branch} {...arg} />
         else if (elm.isLeaf)
-          return <LeafLabel {...arg} />
+          return <LeafLabel className={leaf} {...arg} />
         else return <span key={elm.id}></span>
       })}
     </div>
