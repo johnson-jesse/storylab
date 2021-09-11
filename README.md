@@ -7,8 +7,6 @@ The GitLab + Storybook integration
 
 Add new issues. Quick view issues by component title.
 
-- Fixed breaking issue with 1.0.30 "split"
-
 ![](https://raw.githubusercontent.com/johnson-jesse/storylab/main/.github/images/storylab-2.png)
 
 ## Setup
@@ -16,6 +14,9 @@ Add new issues. Quick view issues by component title.
 Add environment variables
 
 ```bash
+# Optional - Defaults to https://gitlab.com
+SL_GL_BASE_URL<gitlab_server>
+
 SL_GL_PROJECT_ID=<gitlab_repository_name_id>
 SL_GL_USER=<gitlab_user_name>
 SL_GL_TOKEN=<gitlab_personal_access_token>
@@ -59,6 +60,8 @@ We recommend sticking to *Storybook's* naming convention for your component stor
 - [ ] Make boards selectable in the panel
 - [x] Make component identifying labels url safe
 - [ ] Provide richer set of information for the overview tab
+- [x] Added env property to set base url for users with private GitLab servers
+- [x] Label creation view for easily creating or removing labels on GitLab based on the Storybook story names
 
 ## Missing a feature?
 Feel free to open an issue against my repo or even contribute to the project. 🙌
