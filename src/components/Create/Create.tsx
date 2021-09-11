@@ -6,12 +6,14 @@ import { Loader } from "@storybook/components";
 import { Form } from "./type";
 import { postIssue } from "./service";
 import { Issue } from "../Issue/type";
+import { useTransferStyle } from './style';
 
 export default function Create({ refresh }: { refresh: () => void }) {
     const [pending, setPending] = React.useState(false);
     const [issue, setIssue] = React.useState<Issue>();
     const state = useStorybookState();
     const { label: pl } = useProjectLabel();
+    const style = useTransferStyle();
 
     const {
         register,
@@ -30,7 +32,7 @@ export default function Create({ refresh }: { refresh: () => void }) {
     };
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className='sl-wrapper' autoComplete="off">
+        <form onSubmit={handleSubmit(onSubmit)} className={style.slWrapper} autoComplete="off">
             <label htmlFor="title" className={formState.errors.title && 'error'}>Title</label>
             <input placeholder='title' {...register("title", { required: true, })} disabled={pending} />
             <label htmlFor="description" className={formState.errors.description && 'error'}>Description</label>
@@ -45,7 +47,7 @@ export default function Create({ refresh }: { refresh: () => void }) {
                     ))
                 }
             </select>
-            <div className='sl-loader-wrapper'>
+            <div className={style.slLoaderWrapper}>
                 {pending && <Loader role="progressbar" className='sl-loader' />}
                 {!pending && issue && (
                     <a href={issue.web_url} target="_blank">
@@ -53,7 +55,7 @@ export default function Create({ refresh }: { refresh: () => void }) {
                     </a>
                 )}
             </div>
-            <input className='sl-submit' type="submit" disabled={pending} />
+            <input className={style.slSubmit} type="submit" disabled={pending} />
         </form>
     );
 }
