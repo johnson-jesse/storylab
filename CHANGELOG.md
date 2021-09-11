@@ -1,3 +1,15 @@
+# v1.0.35 (Sat Sep 11 2021)
+
+#### 🐛 Bug Fix
+
+- custom server url injection [#8](https://github.com/johnson-jesse/storylab/pull/8) ([@johnson-jesse](https://github.com/johnson-jesse))
+
+#### Authors: 1
+
+- Jesse Alan Johnson ([@johnson-jesse](https://github.com/johnson-jesse))
+
+---
+
 # v1.0.34 (Sat Sep 11 2021)
 
 #### 🐛 Bug Fix
